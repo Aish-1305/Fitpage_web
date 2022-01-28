@@ -91,12 +91,14 @@ export default {
   data() {
     return {
       search: "",
+      rsiData:[],
     };
   },
   created: function () {
     console.log("user data from parent component:", this.data, this.searchData);
   },
    mounted(){
+     this.rsiData = this.myData;
     console.log('this.myData :>> ', this.myData);
  },
   methods: {},
